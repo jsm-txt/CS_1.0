@@ -1,4 +1,3 @@
-
 contents = input("What do you want on your burger? ")
 
 print("This is what you want on your burger " + contents)
@@ -19,3 +18,14 @@ def calculate(numb_burgers):
 total = calculate(numb_burgers)
 
 print(f'Your total is: " {total}')
+
+cash = input("How much money do you have? ")
+cash = int(cash)
+
+def change(cash, total):
+    change = cash - total
+    return (change)
+
+customer_change = change(cash, total)
+
+print(f'"Your change is: " {customer_change}')
